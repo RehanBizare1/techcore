@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #FFF9F2;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #15803d, #22c55e);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 26px 40px;
+}
+
+.logo {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 100px;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    gap: 34px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-weight: 1000;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.search-panel {
+    background: linear-gradient(90deg, #166534, #16a34a);
+    padding: 14px 0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px 18px;
+    font-size: 14px;
+    border-radius: 6px 0 0 6px;
+}
+
+.search-btn {
+    background: linear-gradient(90deg, #15803d, #22c55e);
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    border-radius: 0 6px 6px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.2s ease;
+}
+
+.search-btn:hover {
+    box-shadow: 0 0 14px rgba(34, 197, 94, 0.6);
+}
+
+.hero {
+    background-color: #FFF9F2;
+    padding: 50px 0;
+}
+
+.hero-banner {
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 4px;
+    overflow: visible;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.hero-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.main-content {
+    padding: 70px 0 0;
+}
+
+.about-container,
+.project {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 70px;
+}
+
+.about-container h2,
+.project h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.about-container h2::after,
+.project h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #15803d, #22c55e);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.about-container p {
+    font-size: 15px;
+    color: #333;
+}
+
+.project {
+    max-width: 1200px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    text-align: left;
+}
+
+.project-card {
+    background: linear-gradient(135deg, #15803d, #22c55e);
+    border: none;
+    border-radius: 6px;
+    padding: 28px 24px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(34, 197, 94, 0.4);
+    background: linear-gradient(135deg, #166534, #16a34a);
+}
+
+.img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: -28px -24px 18px;
+    width: calc(100% + 48px);
+    max-width: none;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .img {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.project-card p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.contact {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 70px;
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #15803d, #22c55e);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.contact p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.contact-number {
+    display: inline-block;
+    background: linear-gradient(90deg, #15803d, #22c55e);
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 14px 32px;
+    border-radius: 30px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.contact-number:hover {
+    box-shadow: 0 0 16px rgba(34, 197, 94, 0.6);
+    transform: translateY(-2px);
+}
+
+.footer {
+    background: linear-gradient(90deg, #166534, #16a34a);
+    color: #fff;
+    text-align: center;
+    padding: 26px 0;
+    font-size: 14px;
+}
